@@ -1,1 +1,1 @@
-# ShareGPT4Video.github.io
+# Project Page of ShareGPT4Video

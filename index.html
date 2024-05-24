@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="ShareGPT4Video: Improving Video Understanding and Generation with Better Captions">
+    <meta name="keywords" content="ShareGPT4Video">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShareGPT4Video</title>
+  
+    <link rel="icon" href="images/logo.png">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/leaderboard.css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/js/sort-table.js" defer></script>
+    <script src="./static/js/fontawesome.all.min.js" defer></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/explorer-index.js"></script>
+    <script src="./static/js/question_card.js"></script>
+    <script src="./static/js/leaderboard_testmini.js"></script>  
+  </head>
+
+  <body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More Research
+            </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://mmstar-benchmark.github.io/">
+              <b><img src="images/mmstar.png" style="width:2.0em;vertical-align: middle" alt="Logo"/>MMStar</b>
+            </a>
+            <a class="navbar-item" href="https://sharegpt4v.github.io/">
+              <b><img src="images/sharegpt4v.png" style="width:2.0em;vertical-align: middle" alt="Logo"/>ShareGPT4V</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-2 publication-title"><img id="logo" width="5%" src="images/logo.png"> ShareGPT4Video: Improving Video Understanding and Generation with Better Captions</h1>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <p style="font-size:18px">🤗</p>
+                      </span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <p style="font-size:18px">🤗</p>
+                      </span>
+                      <span>ShareCaptioner-Video</span>
+                    </a>
+                  </span>
+                  <br>
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <p style="font-size:18px">🎬</p>
+                      </span>
+                      <span>ShareCaptioner-Video Demo</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <p style="font-size:18px">🎬</p>
+                      </span>
+                      <span>ShareGPT4Video-7B Demo</span>
+                    </a>
+                  </span>
+                </div>
+                <font size="5">
+                  <br>🚀 A large-scale highly descriptive image-text dataset.
+                  <br>🚀 A general image captioner, approaching GPT4-Vision's caption capability.
+                  <br>🚀 A superior large multi-modal model, ShareGPT4V-7B.
+                </font>
+                <br>
+                <font size="6">
+                  <br><b>NEWS</b>
+                </font>
+                <font size="5">
+                  <br>🎉 <b style="color:#E68E34">[2024.05.08]</b> <b>Project Page</b> and <b>ShareGPT4Video Dataset</b> are released!</b>
+                </font>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="hero is-light is-small" id="Video">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br>
+          <div class="publication-video">
+            <h2 class="title is-3">Video</h2>
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="Abstract">
+      <div class="container" style="margin-bottom: 2vh;">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Captions corresponding to video content provide a solid foundation for large video-language models (LVLMs) to comprehend real-world scenarios and for text-to-video models (T2VMs) to create vivid scenes from human descriptions.
+                However, the lack of high-quality video-caption data poses a significant challenge, as brief captions cannot fully correspond with complex video content.
+                To this end, we establish a high-quality video-caption dataset, ShareGPT4Video.
+                Specifically, we select 40K diverse videos from multiple sources, including movies, ego-centric applications, landscapes, auto-driving scenarios, natural life, etc. We then introduce a semantic-aware key-frame extraction mechanism, a differential sliding-window captioning strategy, and a hierarchical prompt design to harness GPT4V for automatically and efficiently generating high-quality captions for videos of any duration. The resulting captions encompass rich world knowledge, object attributes, camera movements, and crucially, detailed and precise temporal descriptions of events. 
+                With these efforts, our dataset allows users to flexibly compose captions for any video clip utilizing the provided key-frame captions and timestamps, creating a total of \todo{400K} video-caption pairs.
+                Moreover, we develop ShareCaptioner-Video, a superior captioner capable of efficiently generating high-quality captions for videos with a wide range of resolution, aspect ratio, and duration.
+                Through comprehensive experiments, we demonstrate the value of our proposed dataset and captioner in video understanding and generation tasks. We hope this project can serve as a pivotal resource for advancing both the LVLMs and T2VMs community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+    
+    <section class="hero is-light is-small" id="Dataset Title">
+      <div class="hero-body has-text-centered">
+      <h1 class="title is-2">
+        <img src="images/logo.png" style="width:4%;vertical-align: middle" alt="Logo"/>
+        <span style="vertical-align: middle">ShareGPT4Video Dataset</span>
+      </h1>
+      </div>
+    </section>
+    <section class="section" id="Dataset">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p><b>
+                数据集数据来源表格
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="100%" src="images/xxx.png">     
+                  </div>
+                </centering>
+                数据集数据分析表格
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="100%" src="images/xxx.png">     
+                  </div>
+                </centering>
+                pipeline示意图
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="100%" src="images/pipeline.png">     
+                  </div>
+                </centering>
+                Cases
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <h3 class="title is-4">Case 1</h3>
+                      <img src="images/xxx.png" alt="llm_1" width="80%"/>
+                      <div class="content has-text-justified">caption</div>
+                    </div>
+                  </div>
+                  <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <h3 class="title is-4">Case 2</h3>
+                      <img src="images/xxx.png" alt="llm_2" width="80%"/>
+                      <div class="content has-text-justified">caption</div>
+                    </div>
+                  </div>
+                </div>
+              </b>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="hero is-light is-small" id="Captioner Title">
+      <div class="hero-body has-text-centered">
+      <h1 class="title is-2">
+        <img src="images/captioner.png" style="width:4%;vertical-align: middle" alt="Logo"/>
+        <span style="vertical-align: middle">ShareCaptioner-Video</span>
+      </h1>
+      </div>
+    </section>
+    <section class="section" id="Captioner">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p><b>
+                介绍 & 2种原理图
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="90%" src="images/xxx.png">     
+                  </div>
+                </centering>
+                <br>
+                caption对比表格
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="60%" src="images/xxx.png">     
+                  </div>
+                </centering>
+              </b></p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="hero is-light is-small" id="Results Title">
+      <div class="hero-body has-text-centered">
+      <h1 class="title is-2">
+        <span style="vertical-align: middle">📊 Results</span>
+      </h1>
+      </div>
+    </section>
+    <section class="section" id="Results">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p><b>
+                ShareGPT4Video-7B
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="90%" src="images/xxx.png">     
+                  </div>
+                </centering>
+                <br>
+                Generation
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="60%" src="images/xxx.png">     
+                  </div>
+                </centering>
+              </b></p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title is-3 has-text-centered">📃 BibTeX</h2>
+        <pre><code>
+          @article{
+          }
+        </code></pre>
+        <br>
+      </div>
+    </section>
+    
+    
+    <footer class="footer">
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website template is adapted from <a href="https://sharegpt4v.github.io/">ShareGPT4V</a>, <a href="https://mmstar-benchmark.github.io/">MMStar</a> and <a href="https://nerfies.github.io/">Nerfies</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    </body>
+    
+    
+    </html>
+    
