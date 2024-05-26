@@ -63,6 +63,67 @@
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <h1 class="title is-2 publication-title"><img id="logo" width="5%" src="images/logo.png"> ShareGPT4Video: Improving Video Understanding and Generation with Better Captions</h1>
+              <div class="is-size-5 publication-authors">
+                <br>
+                <span class="author-block">
+                  <a href="https://lin-chen.site/" style="font-weight:normal;">Lin Chen<b><sup>* &sect;1,2</sup></b></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://github.com/Wiselnn570/" style="font-weight:normal;">Xilin Wei<b><sup>* &sect;2</sup></b></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://li-jinsong.github.io/" style="font-weight:normal;">Jinsong Li<b><sup>* &sect;2</sup></b></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=FscToE0AAAAJ&hl=en" style="font-weight:normal;">Xiaoyi Dong<sup>2</sup></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://panzhang0212.github.io/" style="font-weight:normal;">Pan Zhang<sup>2</sup></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://yuhangzang.github.io/" style="font-weight:normal;">Yuhang Zang<sup>2</sup></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://lovesnowbest.site/" style="font-weight:normal;">Zehui Chen<sup>1,2</sup></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://kennymckormick.github.io/" style="font-weight:normal;">Haodong Duan<sup>2</sup></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com.hk/citations?user=GCOVDKoAAAAJ&hl=en" style="font-weight:normal;">Bin Lin<sup>3</sup></a>,
+                </span>
+                <span class="author-block">
+                  <a href="" style="font-weight:normal;">Zhenyu Tang<sup>3</sup></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://yuanli2333.github.io/" style="font-weight:normal;">Li Yuan<sup>3</sup></a>,
+                </span>
+                <span class="author-block">
+                  <a href="http://dahua.site/" style="font-weight:normal;">Dahua Lin<b><sup>2</sup></b></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.co.uk/citations?user=r6CvuOUAAAAJ&hl=en" style="font-weight:normal;">Feng Zhao<b><sup>&dagger;1</sup></b></a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://myownskyw7.github.io/" style="font-weight:normal;">Jiaqi Wang<b><sup>&dagger;2</sup></b></a>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> <sup>1</sup> University of Science and Technology of China</b></span>
+                <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> <sup>2 </sup> Shanghai AI Laboratory</span>
+                <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> <sup>3 </sup> Peking University</span>
+              </div>
+              
+              <div class="is-size-6 publication-authors">
+                <br>
+                <span class="author-block"><b>*</b> Equal contribution.</span>
+                <span class="author-block"><b>&dagger;</b> Corresponding authors.</span>
+              </div>
+              
+              <div class="is-size-6 publication-authors">
+                <span class="author-block"><b><sup>&sect;</sup></b> Work done during an internship in Shanghai AI Laboratory.</span>
+              </div>
               <div class="column has-text-centered">
                 <div class="publication-links">
                   <span class="link-block">
@@ -112,10 +173,11 @@
                     </a>
                   </span>
                 </div>
-                <font size="5">
-                  <br>🚀 A large-scale highly descriptive image-text dataset.
-                  <br>🚀 A general image captioner, approaching GPT4-Vision's caption capability.
-                  <br>🚀 A superior large multi-modal model, ShareGPT4V-7B.
+                <font size="3">
+                  <br>🚀 A large-scale highly descriptive video-text dataset, 40K GPT4-Vision-generated video captions, around 400K implicit video split captions
+                  <br>🚀 A general video captioner for various video durations, resolutions, aspect ratios, approaching GPT4-Vision's caption capability, featuring two inference mode targeted for quality and efficiency, separately.
+                  <br>🚀 A series of superior large multi-modal models ShareGPT4Video-8B, ShareGPT4Video-34B, lasting 1 hour and 5 hours on 32xA100 GPUs of training respectively.
+                  <br>🚀 Improving Text-to-Video performance with high-quality video captions generate by our ShareCaptioner-Video
                 </font>
                 <br>
                 <font size="6">
@@ -130,7 +192,6 @@
         </div>
       </div>
     </section>
-    
 
     <section class="hero is-light is-small" id="Video">
       <div class="columns is-centered has-text-centered">
@@ -138,7 +199,7 @@
           <br>
           <div class="publication-video">
             <h2 class="title is-3">Video</h2>
-            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/AQ7j3aegeeI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -185,13 +246,15 @@
                 数据集数据来源表格
                 <centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="images/xxx.png">     
+                    <img id="teaser" width="60%" src="images/dataset_table.png">     
                   </div>
                 </centering>
                 数据集数据分析表格
                 <centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="images/xxx.png">     
+                    <img id="teaser" width="35%" src="images/video_length.png">
+                    <img id="teaser" width="35%" src="images/caption_length.png">   
+                    <img id="teaser" width="25%" src="images/ci_pie.png">        
                   </div>
                 </centering>
                 pipeline示意图
@@ -205,15 +268,64 @@
                   <div class="box m-5">
                     <div class="content has-text-centered">
                       <h3 class="title is-4">Case 1</h3>
-                      <img src="images/xxx.png" alt="llm_1" width="80%"/>
-                      <div class="content has-text-justified">caption</div>
+                      <video width="520" height="360" controls>
+                        <source src="videos/4.mp4" type="video/mp4">
+                      </video>
+                      <div class="content has-text-justified">A movie trailer featuring the adventures of the 30 year old spaceman wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style, shot on 35mm film, vivid colors.</div>
                     </div>
                   </div>
                   <div class="box m-5">
                     <div class="content has-text-centered">
                       <h3 class="title is-4">Case 2</h3>
-                      <img src="images/xxx.png" alt="llm_2" width="80%"/>
-                      <div class="content has-text-justified">caption</div>
+                      <video width="520" height="360" controls>
+                        <source src="videos/6.mp4" type="video/mp4">
+                      </video>
+                      <div class="content has-text-justified">Drone shot along the Hawaii jungle coastline, sunny day. Kayaks in the water.</div>
+                    </div>
+                  </div>
+                  <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <h3 class="title is-4">Case 3</h3>
+                      <video width="520" height="360" controls>
+                        <source src="videos/7.mp4" type="video/mp4">
+                      </video>
+                      <div class="content has-text-justified">Alpacas wearing knit wool sweaters, graffiti background, sunglasses.</div>
+                    </div>
+                  </div>
+                  <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <h3 class="title is-4">Case 4</h3>
+                      <video width="520" height="360" controls>
+                        <source src="videos/8.mp4" type="video/mp4">
+                      </video>
+                      <div class="content has-text-justified">The camera rotates around a large stack of vintage televisions all showing different programs-1950s sci-fi movies, horror movies, news, static, a 1970s sitcom, etc, set inside a large New York museum gallery.</div>
+                    </div>
+                  </div>
+                  <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <h3 class="title is-4">Case 5</h3>
+                      <video width="520" height="360" controls>
+                        <source src="videos/9.mp4" type="video/mp4">
+                      </video>
+                      <div class="content has-text-justified">A drone camera circles around a beautiful historic church built on a rocky outcropping along the Amalfi Coast, the view showcases historic and magnificent architectural details and tiered pathways and patios, waves are seen crashing against the rocks below as the view overlooks the horizon of the coastal waters and hilly landscapes of the Amalfi Coast ltaly, several distant people are seen walking and enjoying vistas on patios of the dramatic ocean views, the warm glow of the afternoon sun creates a magical and romantic feeling to the scene, the view is stunning captured with beautiful photography.</div>
+                    </div>
+                  </div>
+                  <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <h3 class="title is-4">Case 6</h3>
+                      <video width="520" height="360" controls>
+                        <source src="videos/12.mp4" type="video/mp4">
+                      </video>
+                      <div class="content has-text-justified">An aerial shot of a lighthouse standing tall on a rocky cliff, its beacon cutting through the early dawn, waves crash against the rocks below.</div>
+                    </div>
+                  </div>
+                  <div class="box m-5">
+                    <div class="content has-text-centered">
+                      <h3 class="title is-4">Case 7</h3>
+                      <video width="520" height="360" controls>
+                        <source src="videos/15.mp4" type="video/mp4">
+                      </video>
+                      <div class="content has-text-justified">A single drop of liquid metal falls from a floating orb, landing on a mirror-like surface and creating ripples that form intricate patterns. The shot zooms in on the mesmerizing effect, highlighting the fluid's reflective and transformative properties. High Resolution.</div>
                     </div>
                   </div>
                 </div>
@@ -224,7 +336,7 @@
       </div>
     </section>
     
-    
+    <!--
     <section class="hero is-light is-small" id="Captioner Title">
       <div class="hero-body has-text-centered">
       <h1 class="title is-2">
@@ -292,6 +404,7 @@
         </div>
       </div>
     </section>
+   
     
     
     <section class="section" id="BibTeX">
@@ -304,7 +417,7 @@
         <br>
       </div>
     </section>
-    
+     --->
     
     <footer class="footer">
       <div class="content has-text-centered">
