@@ -226,7 +226,7 @@
                 However, the lack of high-quality video-caption data poses a significant challenge, as brief captions cannot fully correspond with complex video content.
                 To this end, we establish a high-quality video-caption dataset, ShareGPT4Video.
                 Specifically, we select 40K diverse videos from multiple sources, including movies, ego-centric applications, landscapes, auto-driving scenarios, natural life, etc. We then introduce a semantic-aware key-frame extraction mechanism, a differential sliding-window captioning strategy, and a hierarchical prompt design to harness GPT4V for automatically and efficiently generating high-quality captions for videos of any duration. The resulting captions encompass rich world knowledge, object attributes, camera movements, and crucially, detailed and precise temporal descriptions of events. 
-                With these efforts, our dataset allows users to flexibly compose captions for any video clip utilizing the provided key-frame captions and timestamps, creating a total of \todo{400K} video-caption pairs.
+                With these efforts, our dataset allows users to flexibly compose captions for any video clip utilizing the provided key-frame captions and timestamps, creating a total of 400K video-caption pairs.
                 Moreover, we develop ShareCaptioner-Video, a superior captioner capable of efficiently generating high-quality captions for videos with a wide range of resolution, aspect ratio, and duration.
                 Through comprehensive experiments, we demonstrate the value of our proposed dataset and captioner in video understanding and generation tasks. We hope this project can serve as a pivotal resource for advancing both the LVLMs and T2VMs community.
               </p>
@@ -253,25 +253,112 @@
             <div class="content has-text-justified">
               <p><b>
                 Dataset Statics
+                </b>
+                <centering>
+                  <style>
+                    table.GeneratedTable {
+                      width: 100%;
+                      background-color: #ffffff;
+                      border-collapse: collapse;
+                      border-width: 2px;
+                      border-color: #c1c4c5;
+                      border-style: solid;
+                      color: #000000;
+                    }
+                    
+                    table.GeneratedTable td, table.GeneratedTable th {
+                      border-width: 2px;
+                      border-color: #9b9d9e;
+                      border-style: solid;
+                      padding: 3px;
+                    }
+                    
+                    table.GeneratedTable thead {
+                      background-color: #6691ee;
+                    }
+                  </style>
+                  <div class="column is-six-fifths" width="80%">
+                  <table class="GeneratedTable">
+                    <thead>
+                      <tr>
+                        <th>Data Source</th>
+                        <th>Samples</th>
+                        <th>Total Time(hours)</th>
+                        <th>Avg. Time(sec)</th>
+                        <th>Avg. Length(#word)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Panda-70M</td>
+                        <td>27092</td>
+                        <td>204.4</td>
+                        <td>27.2</td>
+                        <td>291.2</td>
+                      </tr>
+                      <tr>
+                        <td>Pexels</td>
+                        <td>8487</td>
+                        <td>52.2</td>
+                        <td>22.1</td>
+                        <td>254.9</td>
+                      </tr>
+                      <tr>
+                        <td>Pixabay</td>
+                        <td>2725</td>
+                        <td>20.3</td>
+                        <td>26.9</td>
+                        <td>209.3</td>
+                      </tr>
+                      <tr>
+                        <td>BDD100K</td>
+                        <td>608</td>
+                        <td>6.6</td>
+                        <td>39.0</td>
+                        <td>371.3</td>
+                      </tr>
+                      <tr>
+                        <td>Mixkit</td>
+                        <td>745</td>
+                        <td>3.6</td>
+                        <td>17.5</td>
+                        <td>213.9</td>
+                      </tr>
+                      <tr>
+                        <td>Ego4D</td>
+                        <td>521</td>
+                        <td>3.9</td>
+                        <td>27.1</td>
+                        <td>298.9</td>
+                      </tr>
+                      <tr bgcolor="#a4cff4">
+                        <td>Total</td>
+                        <td>40178</td>
+                        <td>291</td>
+                        <td>26.6</td>
+                        <td>273.3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p style="font-family:Times New Roman">
+                    <font size=4>
+                    <b>Comprehensive Video Caption Dataset:</b> High-Resolution, Diverse Scenarios from YouTube(Panda-70M), User-Uploaded Sites(Pexels, Pixabay, Mixkit), Ego4D, and BDD100K, which covers a broad spectrum of content including wildlife, cooking, sports, news, TV shows, gaming, 3D rendering, scenery, ego-centric human activities and auto-driving scenarios, tailored for comprehensive <b>video understanding</b> and <b>generation</b> needs.
+                    </font>
+                  </p> 
+                </centering>
+                <b>Pipeline</b>
                 <centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="60%" src="images/dataset_table.png">     
+                    <img id="teaser" width="100%" src="images/pipeline.png">
+                    <p style="font-family:Times New Roman">
+                      <font size=4>
+                        <b>(a) ShareGPT4Video Dataset Pipeline</b>
+                        <b>(b) Example of Generated Video Caption</b>
+                      </font>
+                    </p>
                   </div>
                 </centering>
-                <centering>
-                  <div style="text-align: center;">
-                    <img id="teaser" width="35%" src="images/video_length.png">
-                    <img id="teaser" width="35%" src="images/caption_length.png">   
-                    <img id="teaser" width="25%" src="images/ci_pie.png">        
-                  </div>
-                </centering>
-                Pipeline
-                <centering>
-                  <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="images/pipeline.png">     
-                  </div>
-                </centering>
-                Text-to-Video Cases
+                <b>Text-to-Video Cases</b>
                 <div id="results-carousel" class="carousel results-carousel">
                   <div class="box m-5">
                     <div class="content has-text-centered">
@@ -310,7 +397,6 @@
                     </div>
                   </div>
                 </div>
-              </b>
             </div> 
           </div>
         </div>
