@@ -66,28 +66,28 @@
               <div class="is-size-5 publication-authors">
                 <br>
                 <span class="author-block">
-                  <a href="https://lin-chen.site/" style="font-weight:normal;">Lin Chen<b><sup>* &sect;1,2</sup></b></a>,
+                  <a href="https://lin-chen.site/" style="font-weight:normal;">Lin Chen<b><sup>* &sect;1,4</sup></b></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://github.com/Wiselnn570/" style="font-weight:normal;">Xilin Wei<b><sup>* &sect;2</sup></b></a>,
+                  <a href="https://github.com/Wiselnn570/" style="font-weight:normal;">Xilin Wei<b><sup>* &sect;4</sup></b></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://li-jinsong.github.io/" style="font-weight:normal;">Jinsong Li<b><sup>* &sect;2</sup></b></a>,
+                  <a href="https://li-jinsong.github.io/" style="font-weight:normal;">Jinsong Li<b><sup>* &sect;2,4</sup></b></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://scholar.google.com/citations?user=FscToE0AAAAJ&hl=en" style="font-weight:normal;">Xiaoyi Dong<sup>2</sup></a>,
+                  <a href="https://scholar.google.com/citations?user=FscToE0AAAAJ&hl=en" style="font-weight:normal;">Xiaoyi Dong<sup>2,4</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://panzhang0212.github.io/" style="font-weight:normal;">Pan Zhang<sup>2</sup></a>,
+                  <a href="https://panzhang0212.github.io/" style="font-weight:normal;">Pan Zhang<sup>4</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://yuhangzang.github.io/" style="font-weight:normal;">Yuhang Zang<sup>2</sup></a>,
+                  <a href="https://yuhangzang.github.io/" style="font-weight:normal;">Yuhang Zang<sup>4</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://lovesnowbest.site/" style="font-weight:normal;">Zehui Chen<sup>1,2</sup></a>,
+                  <a href="https://lovesnowbest.site/" style="font-weight:normal;">Zehui Chen<sup>1,4</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://kennymckormick.github.io/" style="font-weight:normal;">Haodong Duan<sup>2</sup></a>,
+                  <a href="https://kennymckormick.github.io/" style="font-weight:normal;">Haodong Duan<sup>4</sup></a>,
                 </span>
                 <span class="author-block">
                   <a href="https://scholar.google.com.hk/citations?user=GCOVDKoAAAAJ&hl=en" style="font-weight:normal;">Bin Lin<sup>3</sup></a>,
@@ -99,23 +99,24 @@
                   <a href="https://yuanli2333.github.io/" style="font-weight:normal;">Li Yuan<sup>3</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://mmlab.siat.ac.cn/yuqiao/" style="font-weight:normal;">Yu Qiao<sup>2</sup></a>,
+                  <a href="https://mmlab.siat.ac.cn/yuqiao/" style="font-weight:normal;">Yu Qiao<sup>4</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="http://dahua.site/" style="font-weight:normal;">Dahua Lin<sup>2</sup></a>,
+                  <a href="http://dahua.site/" style="font-weight:normal;">Dahua Lin<sup>2,4</sup></a>,
                 </span>
                 <span class="author-block">
                   <a href="https://scholar.google.co.uk/citations?user=r6CvuOUAAAAJ&hl=en" style="font-weight:normal;">Feng Zhao<b><sup>&dagger;1</sup></b></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://myownskyw7.github.io/" style="font-weight:normal;">Jiaqi Wang<b><sup>&dagger;2</sup></b></a>
+                  <a href="https://myownskyw7.github.io/" style="font-weight:normal;">Jiaqi Wang<b><sup>&dagger;4</sup></b></a>
                 </span>
               </div>
 
               <div class="is-size-5 publication-authors">
-                <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> <sup>1</sup> University of Science and Technology of China</b></span>
-                <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> <sup>2 </sup> Shanghai AI Laboratory</span>
+                <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> <sup>1</sup> University of Science and Technology of China</b></span>
+                <span class="author-block"><b style="color:#fa7f6f; font-weight:normal">&#x25B6 </b> <sup>2 </sup> The Chinese University of Hong Kong</span>
                 <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> <sup>3 </sup> Peking University</span>
+                <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> <sup>4 </sup> Shanghai AI Laboratory</span>
               </div>
               
               <div class="is-size-6 publication-authors">
@@ -233,13 +234,18 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Captions corresponding to video content provide a solid foundation for large video-language models (LVLMs) to comprehend real-world scenarios and for text-to-video models (T2VMs) to create vivid scenes from human descriptions.
-                However, the lack of high-quality video-caption data poses a significant challenge, as brief captions cannot fully correspond with complex video content.
-                To this end, we establish a high-quality video-caption dataset, ShareGPT4Video.
-                Specifically, we select 40K diverse videos from multiple sources, including movies, ego-centric applications, landscapes, auto-driving scenarios, natural life, etc. We then introduce a semantic-aware key-frame extraction mechanism, a differential sliding-window captioning strategy, and a hierarchical prompt design to harness GPT4V for automatically and efficiently generating high-quality captions for videos of any duration. The resulting captions encompass rich world knowledge, object attributes, camera movements, and crucially, detailed and precise temporal descriptions of events. 
-                With these efforts, our dataset allows users to flexibly compose captions for any video clip utilizing the provided key-frame captions and timestamps, creating a total of 400K video-caption pairs.
-                Moreover, we develop ShareCaptioner-Video, a superior captioner capable of efficiently generating high-quality captions for videos with a wide range of resolution, aspect ratio, and duration.
-                Through comprehensive experiments, we demonstrate the value of our proposed dataset and captioner in video understanding and generation tasks. We hope this project can serve as a pivotal resource for advancing both the LVLMs and T2VMs community.
+                We present the ShareGPT4Video series, aiming to facilitate the video understanding of large video-language models (LVLMs) and the video generation of text-to-video models (T2VMs) via dense and precise captions.
+                The series comprises: <b>1) ShareGPT4Video</b>, 40K GPT4V annotated dense captions of videos with various lengths and sources, developed through carefully designed data filtering and annotating strategy.
+                <b>2) ShareCaptioner-Video</b>, an efficient and capable captioning model for arbitrary videos, with 4.8M high-quality aesthetic videos annotated by it.
+                <b>3) ShareGPT4Video-8B</b>, a simple yet superb LVLM that reached SOTA performance on three advancing video benchmarks.
+                To achieve this, taking aside the non-scalable costly human annotators, we find using GPT4V to caption video with a naive multi-frame or frame-concatenation input strategy leads to less detailed and sometimes temporal-confused results. We argue the challenge of designing a high-quality video captioning strategy lies in three aspects: 
+                <b>1) Inter-frame precise temporal change understanding.
+                2) Intra-frame detailed content description.
+                3) Frame-number scalability for arbitrary-length videos. </b>
+                To this end, we meticulously designed a differential video captioning strategy, which is stable, scalable, and efficient for generating captions for videos with arbitrary resolution, aspect ratios, and length.
+                Based on it, we construct ShareGPT4Video, which contains 40K high-quality videos spanning a wide range of categories, and the resulting captions encompass rich world knowledge, object attributes, camera movements, and crucially, detailed and precise temporal descriptions of events. 
+                Based on ShareGPT4Video, we further develop ShareCaptioner-Video, a superior captioner capable of efficiently generating high-quality captions for arbitrary videos. We annotated 4.8M aesthetically appealing videos by it and verified their effectiveness on a 10-second text2video generation task.
+                For video understanding, we verified the effectiveness of ShareGPT4Video on several current LVLM architectures and presented our superb new LVLM ShareGPT4Video-8B. All the models, strategies, and annotations(We do not hold the copyright for any video and will provide the link-annotation pair for research-only usage.) will be open-sourced and we hope this project can serve as a pivotal resource for advancing both the LVLMs and T2VMs community.
               </p>
             </div>
           </div>
@@ -262,6 +268,19 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <div class="content has-text-justified">
+              <b>Details and attributes of the ShareGPT4Video</b>
+                <centering>
+                  <div style="text-align: center;">
+                    <img id="teaser" width="100%" src="images/teaser.png">
+                    <p style="font-family:Times New Roman">
+                      <font size=4>
+                        (a) The proposed ShareGPT4Video dataset contains a large volume of high-quality video-caption pairs collected from diverse sources, with 40K captions from GPT4V and 4.8M captions from our ShareCaptioner-Video.
+    (b) We illustrate in detail the process of harnessing the multi-modal image model GPT4V to generate high-quality captions for videos.
+    (c) Our unique captioning strategy enables the re-caption of sub-clips by reusing their differential captions.
+                      </font>
+                    </p>
+                  </div>
+                </centering>
               <p><b>
                 Dataset Statics
                 </b>
@@ -401,8 +420,7 @@
                     <img id="teaser" width="100%" src="images/pipeline.png">
                     <p style="font-family:Times New Roman">
                       <font size=4>
-                        <b>(a) ShareGPT4Video Dataset Pipeline</b>
-                        <b>(b) Example of Generated Video Caption</b>
+                        ShareGPT4Video Dataset Pipeline
                       </font>
                     </p>
                   </div>
@@ -413,13 +431,55 @@
             </div>
           </section>
 
-                <section class="hero is-light is-small" id="Dataset Title">
-                  <div class="hero-body has-text-centered">
-                  <h1 class="title is-2">
-                    <span style="vertical-align: middle">Text-to-Video Cases</span>
-                  </h1>
+          <section class="hero is-light is-small" id="Dataset Title">
+            <div class="hero-body has-text-centered">
+            <h1 class="title is-2">
+              <img src="images/logo.jpg" style="width:4%;vertical-align: middle" alt="Logo"/>
+              <span style="vertical-align: middle">ShareCaptioner-Video</span>
+            </h1>
+            </div>
+          </section>
+          <section class="section" id="Dataset">
+            <div class="container">
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                  <div class="content has-text-justified">
+                    <centering>
+                      <div style="text-align: center;">
+                        <img id="teaser" width="100%" src="images/sharecaptioner.png">
+                        <p style="font-family:Times New Roman">
+                          <font size=4>
+                            The ShareCaptioner-Video is a Four-in-One exceptional video captioning model with the following
+capabilities: Fast captioning, Sliding Captioning, Clip Summarizing, and Prompt Re-Captioning
+                          </font>
+                        </p>
+                      </div>
+                    </centering>
+                    <centering>
+                      <div style="text-align: center;">
+                        <img id="teaser" width="100%" src="images/sharecaptioner_compare.png">
+                        <p style="font-family:Times New Roman">
+                          <font size=4>
+                            A qualitative comparison of caption quality from various sources. Mistakes within the captions are
+highlighted in red, whereas detailed and accurate parts are emphasized in blue
+                          </font>
+                        </p>
+                      </div>
+                    </centering>
                   </div>
-                </section>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="hero is-light is-small" id="Dataset Title">
+            <div class="hero-body has-text-centered">
+            <h1 class="title is-2">
+              <span style="vertical-align: middle">Text-to-Video Cases</span>
+            </h1>
+            </div>
+          </section>
                 
 
       <section class="section" id="Dataset">
